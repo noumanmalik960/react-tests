@@ -6,3 +6,12 @@ script:
   - npm install
   - npm test
   - npm run build
+
+deploy:
+  provider: surge
+  skip_cleanup: true
+  domain: http://react-tests-ci.surge.sh/
+  project: ./build/
+
+on:
+  branch: main
