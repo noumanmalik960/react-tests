@@ -10,6 +10,6 @@ test('renders learn react link', () => {
   const linkElement = screen.getByText(/sup/i);
   expect(linkElement).toBeInTheDocument();
 
-  const imageElement = screen.getByAltText('logo')
-  expect(imageElement).toBeInTheDocument();
+  // const imageElement = screen.getByAltText('logo')
+  // expect(imageElement).toBeInTheDocument();
 });
